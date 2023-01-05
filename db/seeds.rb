@@ -42,6 +42,9 @@ Dog.create([{
     user_id: nil}
 ])
 
+Treat.create([{name: "pup pop"}, {name: "peanut butter"}, {name: "sweet potato"}, 
+{name: "cheese"}, {name: "marshmallow"}, {name: "salmon jerky"}])
+
 
    
 
