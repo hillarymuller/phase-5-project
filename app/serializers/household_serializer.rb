@@ -1,3 +1,3 @@
 class HouseholdSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :users
 end

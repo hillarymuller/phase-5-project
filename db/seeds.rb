@@ -5,6 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Treat.create([{name: "pup pop"}, {name: "peanut butter"}, {name: "sweet potato"}, 
+{name: "cheese"}, {name: "marshmallow"}, {name: "salmon jerky"}])
+
 Dog.create([{
     name: "Briscoe", 
     hunger: 10, 
@@ -22,7 +25,8 @@ Dog.create([{
     pet_gif: "https://media.giphy.com/media/H0MeRgAwyeEHdYL1fJ/giphy.gif", 
     treat_gif: "https://media.giphy.com/media/0rRxRnVpFtYGPSFteS/giphy-downsized-large.gif", 
     nap_gif: "https://media.giphy.com/media/DcmV8bjMhfTwqlamRe/giphy-downsized-large.gif",
-    user_id: nil},
+    user_id: nil, 
+    treats: Treat.all.filter{ |t| t.name != "salmon jerky" }},
     {name: "Maverick", 
     hunger: 10, 
     happiness: 0, 
@@ -39,13 +43,13 @@ Dog.create([{
     pet_gif: "https://media.giphy.com/media/1budlDIicG96ydxuqK/giphy-downsized-large.gif", 
     treat_gif: "https://media.giphy.com/media/KwqzFY3H4PZssbYaSd/giphy.gif", 
     nap_gif: "https://media.giphy.com/media/KwqzFY3H4PZssbYaSd/giphy.gif", 
-    user_id: nil}
+    user_id: nil, 
+    treats: Treat.all}
 ])
 
-Treat.create([{name: "pup pop"}, {name: "peanut butter"}, {name: "sweet potato"}, 
-{name: "cheese"}, {name: "marshmallow"}, {name: "salmon jerky"}])
 
 
-   
+
+
 
 
